@@ -55,6 +55,7 @@ export class HeaderView extends View {
   addHandlerGetInput(handler) {
     this._parentElement.addEventListener("click", (e) => {
       const btn = e.target.closest(".search-btn");
+      console.log("click")
       if (!btn) return;
       handler();
       const previewContainer = document.querySelector(".preview-container");
@@ -62,7 +63,8 @@ export class HeaderView extends View {
     });
 
     this._parentElement.addEventListener("keypress", (e) => {
-      if (e.keyCode == 13) handler();
+    console.log("key")
+      if (e.key=== "Enter") handler();
       const previewContainer = document.querySelector(".preview-container");
       previewContainer.classList.remove("hidden");
     });
