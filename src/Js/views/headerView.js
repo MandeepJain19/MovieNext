@@ -74,7 +74,6 @@ export class HeaderView extends View {
       <input
         type="text"
         class="input--search"
-        onclick='$(".input--search").focus();
         placeholder="Search movies here..."
         value="${this.#searchQuery}"
       />
