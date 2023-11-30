@@ -1,0 +1,20 @@
+{
+  "name": "movienext",
+  "version": "1.0.0",
+  "description": "Movie Search application",
+  "default": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --dist-dir ./dist"
+  },
+  "devDependencies": {
+    "parcel": "^2.9.3"
+  },
+  "dependencies": {
+    "core-js": "^3.32.2",
+    "fractional": "^1.0.0",
+    "regenerator-runtime": "^0.14.0"
+  },
+  "author": "Mandeep Jain",
+  "license": "ISC"
+}
